@@ -23,7 +23,6 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
-    'prettier/prettier': ['error'],
     'no-unused-vars': 1,
     'import/extensions': 0,
     'import/order': 1,
@@ -33,6 +32,14 @@ module.exports = {
     'import/no-useless-path-segments': 0,
     'import/prefer-default-export': 0,
     'react/jsx-uses-vars': 2,
+    'react/jsx-closing-bracket-location': 1,
+    'react/jsx-first-prop-new-line': 1,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   plugins: ['prettier'],
   env: {

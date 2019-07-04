@@ -41,5 +41,17 @@
     "husky": "^3.0.0",
     "lint-staged": "^9.0.2",
     "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,css}": [
+      "eslint src",
+      "npm run format",
+      "git add"
+    ]
   }
 }

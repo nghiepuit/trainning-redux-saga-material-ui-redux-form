@@ -7,7 +7,12 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'airbnb', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'prettier',
+  ],
   rules: {
     'react/prop-types': 1,
     'react/jsx-max-props-per-line': 1,
@@ -26,12 +31,13 @@ module.exports = {
     'no-use-before-define': 0,
     'no-param-reassign': 0,
     'import/no-useless-path-segments': 0,
-    'import/prefer-default-export': 0
+    'import/prefer-default-export': 0,
+    'react/jsx-uses-vars': 2,
   },
   plugins: ['prettier'],
   env: {
-    "es6": true,
-    "browser": true,
-    "node": true
-  }
+    es6: true,
+    browser: true,
+    node: true,
+  },
 };

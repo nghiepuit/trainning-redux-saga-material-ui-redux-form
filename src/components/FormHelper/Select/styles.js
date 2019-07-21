@@ -1,6 +1,6 @@
 const styles = () => ({
-  modalConfirmTextBold: {
-    fontWeight: 700,
+  formControl: {
+    width: '100%',
   },
 });
 

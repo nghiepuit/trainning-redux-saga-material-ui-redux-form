@@ -1,6 +1,7 @@
 const styles = () => ({
-  modalConfirmTextBold: {
-    fontWeight: 700,
+  container: {},
+  textField: {
+    width: '30%',
   },
 });
 
